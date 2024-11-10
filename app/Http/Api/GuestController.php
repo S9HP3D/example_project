@@ -9,17 +9,10 @@ use App\Models\Guest;
 
 class GuestController extends BaseController
 {
-
-
-
-
-
-
     public function index()
     {
         return GuestResource::collection(Guest::all());
     }
-
 
     public function store(StoreRequest $request)
     {
@@ -28,12 +21,10 @@ class GuestController extends BaseController
         return $this->service->store(new Guest($data));
     }
 
-
     public function show(Guest $guest)
     {
         return new GuestResource($guest);
     }
-
 
     public function update(UpdateRequest $request, Guest $guest)
     {
@@ -41,7 +32,6 @@ class GuestController extends BaseController
 
         return $this->service->update($guest,$data);
     }
-
 
     public function destroy(Guest $guest)
     {

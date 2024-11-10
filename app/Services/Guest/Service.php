@@ -7,7 +7,6 @@ use App\Models\Guest;
 
 class Service
 {
-
     public function store($guest){
 
         $guest->save();
@@ -15,7 +14,6 @@ class Service
         return response()->json(new GuestResource($guest), 201);
 
     }
-
     public function update($guest,$data){
 
         $guest->update($data);
@@ -23,5 +21,4 @@ class Service
         return response()->json(new GuestResource($guest), 201);
 
     }
-
 }
