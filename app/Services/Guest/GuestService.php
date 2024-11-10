@@ -5,7 +5,7 @@ namespace App\Services\Guest;
 use App\Http\Resources\GuestResource;
 use App\Models\Guest;
 
-class Service
+class GuestService
 {
     public function store($guest){
 
