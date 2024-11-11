@@ -6,7 +6,9 @@ composer install
 
 docker-compose up -d
 
-docker-compose exec -it example_app bash
+sudo chmod 777 -R ./
+
+docker-compose exec -it app bash
 
 php artisan migrate 
 
