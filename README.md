@@ -28,17 +28,17 @@ php artisan migrate
 API
 CRUD операции
 
-    GET /guests - получить список всех гостей
-    GET /guests/{id} - получить гостя по идентификатору
-    POST /guests - создать нового гостя
-    PUT /guests/{id} - обновить гостя
-    DELETE /guests/{id} - удалить гостя
+    GET api/guests - получить список всех гостей
+    GET api/guests/{id} - получить гостя по идентификатору
+    POST api/guests - создать нового гостя
+    PUT api/guests/{id} - обновить гостя
+    DELETE api/guests/{id} - удалить гостя
 
 Параметры запроса
 
 Примеры запросов
 
-   GET /guests
+   GET api/guests
 
 	{
     "data": [
@@ -62,7 +62,7 @@ CRUD операции
 }
 
 
-  POST /guests
+  POST api/guests
 
 	{
         "first_name": "testg34",
@@ -74,7 +74,7 @@ CRUD операции
 Ответ от сервера
 
 	{
-		"id": 37,
+	"id": 37,
     	"first_name": "testg34",
     	"last_name": "dsfs2",
     	"email": "e1md@gmail.com",
